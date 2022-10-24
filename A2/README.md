@@ -1,4 +1,6 @@
-#### Assignment 1 (Weka Classification via Code)
+### Assignment 1 (Weka Classification via Code)
+
+#### Add code to A1.java
 
 How to compile: javac A1.java util/MyWekaUtils.java -classpath weka.jar -Xlint
 
