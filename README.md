@@ -1,2 +1,1 @@
-# SPMLSmartWatchFall2022
-Smart Watch Assignments
+## SPML Smart Watch Assignments
