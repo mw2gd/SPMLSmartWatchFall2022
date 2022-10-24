@@ -2,6 +2,6 @@
 
 #### Add code to A1.java
 
-How to compile: javac A1.java util/MyWekaUtils.java -classpath weka.jar -Xlint
+- How to compile: javac A1.java util/MyWekaUtils.java -classpath weka.jar -Xlint
 
-How to execute: java A1
+- How to execute: java A1
