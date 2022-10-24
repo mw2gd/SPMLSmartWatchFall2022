@@ -6,36 +6,41 @@ import util.MyWekaUtils;
  */
 public class A1 {
     public static void main(String[] args) {
+        int[] featureIndices = new int[20];
+        String filePath = "";
 
+        System.out.println(args.length);
 
         /*
          * Check for command line arguments (filepath, featureindices)
          */
         if (args.length < 3) {
-            System.out.println("Testing");
             System.exit(0);
         }
         else {
-            Integer featureIndices = Integer.parseInt(args[2]); 
-
-            /*
+             /*
             * My idea is to execute the python script before running this
             * CSV file with features must already exist
             */
-            String filePath = args[1]; // Add path to preprocessed csv 
+            filePath = args[1]; // Add path to preprocessed csv 
+
+            // pass unknown number of feature indices to command line
+            for (int i = 2; i < args.length; i++) {
+                featureIndices[i-2] = Integer.parseInt(args[i]); 
+            }
         }
 
 
         try {
             String[][] csvData = MyWekaUtils.readCSV(filePath);
-            String arffData = csvToArff(csvData, featureIndices);
+            String arffData = MyWekaUtils.csvToArff(csvData, featureIndices);
         }
         catch(Exception e) {
             System.out.println(e); // print excpetion that was thrown
         }
 
         // continue code...
-        
+
     }
   }
   
