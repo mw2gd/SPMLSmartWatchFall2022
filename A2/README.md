@@ -1,5 +1,5 @@
-### Assignment 1: Weka Classification via Code
-## Report for this assignment is on Google Drive
+## Assignment 1: Weka Classification via Code
+### Report for this assignment is on Google Drive
 
 ---
 
