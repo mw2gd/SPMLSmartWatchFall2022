@@ -66,8 +66,8 @@ def features(entries):
         df_final = pd.concat([df_final, df_features])
         break
 
-     # print(df_final)
-     # df_final.to_csv('./features.csv', encoding='utf-8', index=False, header=True)
+    print(df_final)
+    df_final.to_csv('./features.csv', encoding='utf-8', index=False, header=True)
 
 
 def main():
