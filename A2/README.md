@@ -10,7 +10,7 @@ How to execute: java A1
 
 ---
 
-Execution Order: format.py -> features.py -> A1
+***Execution Order: format.py -> features.py -> A1***
 
 format.py: creates new CSVs with irrelevant columns removed
 
