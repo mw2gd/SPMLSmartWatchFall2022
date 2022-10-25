@@ -2,6 +2,8 @@ import pandas as pd
 import os
 import statistics # statistics.mean and statistics.stdev
 
+TIME_SLICE = 1
+
 def features(entries):
     df_final = pd.DataFrame(columns=['mean_x', 'std_x', 'mean_y', 'std_y', 'mean_z', 'std_z', 'Activity'])
 
@@ -24,9 +26,9 @@ def features(entries):
         df_features = pd.DataFrame(columns=['mean_x', 'std_x', 'mean_y', 'std_y', 'mean_z', 'std_z', 'Activity'])
 
         # calculate features for each second's worth of data
-        for i in range (0, num_seconds):
+        for i in range (0, num_seconds-TIME_SLICE):
             start = i*window_size
-            end   = start+window_size
+            end   = start+window_size*TIME_SLICE
             x_accel = df.iloc[start:end,1]
             y_accel = df.iloc[start:end,2]
             z_accel = df.iloc[start:end,3]
