@@ -37,6 +37,7 @@ public class A1 {
         }
         catch(Exception e) {
             System.out.println(e); // print excpetion that was thrown
+            System.exit(0);
         }
 
         // continue code...
