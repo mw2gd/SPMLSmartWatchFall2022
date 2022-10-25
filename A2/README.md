@@ -1,4 +1,5 @@
 ### Assignment 1: Weka Classification via Code
+## Report for this assignment is on Google Drive
 
 ---
 
@@ -16,4 +17,4 @@ format.py: creates new CSVs with irrelevant columns removed
 
 features.py: creates a single CSV of features from all the formatted files
 
-A1: performs WEKA analysis
+A1: outputs accuracy % using WEKA
