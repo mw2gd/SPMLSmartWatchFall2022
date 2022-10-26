@@ -2,10 +2,10 @@ package util;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.io.PrintWriter;
 import java.io.StringReader;
 import java.util.ArrayList;
 import java.util.Random;
+
 import weka.classifiers.Classifier;
 import weka.classifiers.Evaluation;
 import weka.classifiers.functions.SMO;

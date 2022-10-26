@@ -7,7 +7,7 @@ Add code to to A1.java's main method
 
 How to compile: javac -classpath util/weka.jar util/MyWekaUtils.java A2.java
 
-How to execute: java -cp .:weka.jar A2 <args>
+How to execute: java -cp .:util/weka.jar A2 <args>
 
 ---
 
