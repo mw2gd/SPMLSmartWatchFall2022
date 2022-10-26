@@ -19,6 +19,10 @@ import weka.core.Instances;
  */
 public class MyWekaUtils {
 
+    // public static void main(String[] args) {
+    //     System.out.println("hello world");
+    // }
+
     public static double classify(String arffData, int option) throws Exception {
 		StringReader strReader = new StringReader(arffData);
 		Instances instances = new Instances(strReader);
