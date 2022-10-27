@@ -1,5 +1,4 @@
 import util.MyWekaUtils;
-import java.util.*;
 
 /*
  * The Main function for Assignment 2; Uses methods in MyWekaUtils

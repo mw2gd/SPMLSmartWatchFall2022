@@ -2,7 +2,7 @@ import pandas as pd
 import os
 import statistics # statistics.mean, statistics.stdev, statistics.median
 
-TIME_SLICE = 1
+TIME_SLICE = 4
 
 cols = ['mean_x', 'std_x', 'median_x', 'rms_x', 'mean_y', 'std_y', 'median_y', 'rms_y','mean_z', 'std_z', 'median_z', 'rms_z','Activity'] 
 
