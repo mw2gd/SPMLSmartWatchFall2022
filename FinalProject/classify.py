@@ -73,10 +73,12 @@ def main():
 
     for file in csv_train_files:
         print("FILE: " + "'" + file + "'")
-        print("Decision Tree")
-        classify(file, "1")
-        print("Random Forest")
-        classify(file, "2")
+        # print("Decision Tree")
+        # classify(file, "1")
+        # print("Random Forest")
+        # classify(file, "2")
+        print("SVM")
+        classify(file, "3")
         print("")
 
 if __name__=="__main__":
