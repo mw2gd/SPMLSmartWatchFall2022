@@ -41,5 +41,5 @@ Random Forest
 Best Result:
 Time Slice 5
 Random Forest
-All Features outperforms Sequential Feature Selection 
+Using all features outperformed Sequential Feature Selection 
 Best Accuracy: 99.235
