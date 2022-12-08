@@ -12,6 +12,8 @@ import weka.classifiers.functions.SMO;
 import weka.classifiers.trees.J48;
 import weka.classifiers.trees.RandomForest;
 import weka.core.Instances;
+import weka.classifiers.bayes.NaiveBayes;
+import weka.classifiers.functions.MultilayerPerceptron;
 
 /**
  *
@@ -33,9 +35,13 @@ public class MyWekaUtils {
 		if(option==1)
 			classifier = new J48(); // Decision Tree classifier
 		else if(option==2)			
-			classifier = new RandomForest();
+			classifier = new RandomForest(); 
 		else if(option == 3)
 			classifier = new SMO();  //This is a SVM classifier
+        else if(option == 4)
+            classifier = new NaiveBayes(); // This is a naive bayes
+        else if(option ==5)
+            classifier = new MultilayerPerceptron(); // this is a NN
 		else 
 			return -1;
 		
@@ -44,6 +50,9 @@ public class MyWekaUtils {
 		Evaluation eval = new Evaluation(instances);
 		eval.crossValidateModel(classifier, instances, 10, new Random(1), new Object[] { });
 		
+        // System.out.println(eval.toSummaryString());
+        // System.out.println(eval.toClassDetailsString());
+
 		return eval.pctCorrect();
 	}
     

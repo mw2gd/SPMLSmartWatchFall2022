@@ -77,8 +77,14 @@ def main():
         # classify(file, "1")
         # print("Random Forest")
         # classify(file, "2")
-        print("SVM")
-        classify(file, "3")
+        # print("SVM")
+        # classify(file, "3")
+        # print("")
+        # print("Naive Bayes")
+        # classify(file, "4")
+        # print("")
+        print("NN")
+        classify(file, "5")
         print("")
 
 if __name__=="__main__":
